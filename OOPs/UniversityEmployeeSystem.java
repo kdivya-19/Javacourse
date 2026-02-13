@@ -10,14 +10,6 @@ abstract class Employee2{
 		this.empName=empName;
 	}
 	
-//	public void setempId(String empId) {
-//		this.empId=empId;
-//	}
-//	
-//	public void setempName(String empName) {
-//		this.empName=empName;
-//	}
-	
 	public String getempName() {
 		return empName;
 	}
