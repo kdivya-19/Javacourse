@@ -33,7 +33,7 @@ public class Example4 {
 			e.printStackTrace();
 		}
 		
-		System.out.println();
+		System.out.println(1);
 		
 		try {
 			new Example4().data(3);
@@ -46,7 +46,7 @@ public class Example4 {
 			e.printStackTrace();
 		}
 		
-		System.out.println();
+		System.out.println(2);
 		
 		
 		try {
@@ -60,7 +60,7 @@ public class Example4 {
 			e.printStackTrace();
 		}
 		
-		System.out.println();
+		System.out.println("3....");
 		
 		try {
 			new Example4().data(0);
