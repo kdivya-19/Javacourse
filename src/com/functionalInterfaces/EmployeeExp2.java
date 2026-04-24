@@ -5,7 +5,7 @@ import java.util.function.Predicate;
 
  public class EmployeeExp2 {
 	
-	 private String name;
+	 	private String name;
 		private String designation;
 		private double salary;
 		

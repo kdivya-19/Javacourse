@@ -28,7 +28,7 @@ public class CahrChecker  {
 		Function<CahrChecker, Void> f2=new Function<CahrChecker, Void>(){
 			public Void apply(CahrChecker ch) {
 				int n=ch.checkChar();
-				if (n<=1) {
+				if(n<=1) {
 					System.out.println("Not prime");
 					return null;
 					

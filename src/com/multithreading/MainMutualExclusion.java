@@ -1,7 +1,7 @@
 package com.multithreading;
 
 class Printer{
-	public void print(int n,String name) {
+	public void print(int n, String name) {
 		for(int i=1;i<=n;i++) {
 			System.out.println(name+" "+i);
 			try {
@@ -10,7 +10,6 @@ class Printer{
 				e.printStackTrace();
 			}
 		}
-		
 		
 	}
 }

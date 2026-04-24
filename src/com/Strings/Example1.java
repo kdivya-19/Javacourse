@@ -18,7 +18,7 @@ public class Example1 {
 		String str4=" is awesome";
 		String str5=str1+str4;
 		String str6="java is awesome";
-		System.out.println(str5==str6);
+		System.out.println("str5 str6 "+ (str5==str6));
 		System.out.println(str5.intern()==str6);//Using intern we can give address i.e we can store object strings in SCP(String constant pool
 		System.out.println(str5.equals(str6));
 		
@@ -41,6 +41,34 @@ public class Example1 {
 		strbuffer.append("is ").append("awesome");
 		System.out.println("String after modifying : "+strbuffer);
 		System.out.println("Reversing String : "+strbuffer.reverse());
+		
+		
+		
+		
+		String ss=new String("abc");
+		String ss2=new String("abc");
+		System.out.println(ss==ss2);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 	}
 }

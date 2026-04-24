@@ -46,7 +46,7 @@ public class Example4 {
 			e.printStackTrace();
 		}
 		
-		System.out.println(2);
+		System.out.println(2+"\n");
 		
 		
 		try {
