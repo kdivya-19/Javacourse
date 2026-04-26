@@ -57,11 +57,13 @@ public class Employee {
 				
 				
 				Employee obj=new Employee(id1, name1, sal);
-				if(arr.isEmpty() && sal>0) {
+				if(sal<0) {
+					System.out.println("salary should not be negative");
+				}
+				else if(arr.isEmpty() && sal>0) {
 					arr.add(obj);
 					System.out.println("Data Added Successfully...");
 				}
-				
 				else {
 					
 					boolean added=true;
@@ -72,9 +74,9 @@ public class Employee {
 					}
 					if(added==true && sal>0 ) {
 						arr.add(obj);
-						System.out.println("Data Added Successfully...");
+						System.out.println("Employee Added Successfully...");
 					}else {
-						System.out.println("Invalid credentials!-----");
+						System.out.println("Id is already exists-----");
 					}
 				}
 				
@@ -108,18 +110,31 @@ public class Employee {
 							max_sal=obj1.salary;
 						}
 					}
-					System.out.println(max_sal);
+					
+					for(Employee obj1:arr) {
+						if(obj1.salary==max_sal) {
+							System.out.println(obj1);
+							break;
+						}
+					}
+					
 					
 				}
 				break;
 			
 			case 4:
-				
-				for(Employee obj1:arr) {
-					obj1.salary=obj1.salary*0.1+obj1.salary;
-					System.out.println(obj1.salary);
+				if(arr.isEmpty()) {
+					System.out.println("List is empty");
 				}
+				else {
 				
+					System.out.println("Enter percentage: ");
+					double percentage=sc.nextDouble();
+					for(Employee obj1:arr) {
+						obj1.salary=obj1.salary*(percentage/100)+obj1.salary;
+						System.out.println("salary updated successfully.....");
+					}
+				}
 				
 				break;
 				
